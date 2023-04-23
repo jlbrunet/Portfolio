@@ -1,1 +1,30 @@
 // Specific CSS for your home-page
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #dbd8cf, #e3e0dd);
+  background-size: cover;
+}
+
+// Profile banner
+
+.profile-banner {
+  width: 260px;
+  height: 100vh;
+  transition: transform 250ms;
+  position: sticky;
+  top: 0;
+}
+
+.profile-banner:hover {
+  transform: translateX(10px);
+  box-shadow: -1px 1px 10px 10px #e3e0ddf5;
+}
+
+.name {
+  font-size: 60px;
+  font-weight: bold;
+  color: $dark-gray;
+  text-align: center;
+}
