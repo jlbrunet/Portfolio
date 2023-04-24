@@ -17,6 +17,7 @@ body {
   top: 0;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .profile-banner:hover {
@@ -31,4 +32,24 @@ body {
   font-weight: bold;
   color: $dark-gray;
   text-align: center;
+}
+
+.homepage {
+  width: calc(100% - 260px);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  // mettre une variable pour la taille de la banner comme les couleurs en $
+}
+
+.description-container {
+  border-radius: 10px;
+  margin-top: 1000px;
+  display: flex;
+  justify-content: center;
 }
