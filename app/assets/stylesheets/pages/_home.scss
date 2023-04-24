@@ -5,6 +5,7 @@ body {
   height: 100vh;
   background-image: linear-gradient(to bottom right, #dbd8cf, #e3e0dd);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 // Profile banner
@@ -13,11 +14,10 @@ body {
   width: 260px;
   height: 100vh;
   transition: transform 250ms;
-  position: sticky;
-  top: 0;
+  // position: sticky;
+  // top: 0;
   padding-top: 20px;
   padding-bottom: 20px;
-  position: relative;
 }
 
 .profile-banner:hover {
