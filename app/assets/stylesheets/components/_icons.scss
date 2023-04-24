@@ -2,8 +2,17 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .icon-design {
   color: $dark-gray;
+  font-size: 40px;
+  text-decoration: none;
+  transition: transform 250ms;
+}
+
+.icon-design:hover {
+  transform: scale(1.25);
 }

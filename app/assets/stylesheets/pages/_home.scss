@@ -15,6 +15,8 @@ body {
   transition: transform 250ms;
   position: sticky;
   top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .profile-banner:hover {
@@ -23,7 +25,9 @@ body {
 }
 
 .name {
-  font-size: 60px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 50px;
   font-weight: bold;
   color: $dark-gray;
   text-align: center;
