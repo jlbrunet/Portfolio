@@ -1,21 +1,23 @@
-<%# Profile Banner %>
-<div class="global-container">
+<div class="page-container"> <%# contains : div profile-container + div content-container %>
 
-  <div class="profile-banner" data-controller="contact">
-    <%= image_tag "profile_picture.jpg", alt: "profile picture", class: "profile-picture"%>
+  <div class="profile-container" data-controller="contact">
+    <%= image_tag "profile_picture.jpg", alt: "profile picture", class: "avatar"%>
     <h1 class="name">Julie Brunet</h1>
     <div class="icons-container">
-      <div class="icons">
+      <div class="icons-box">
         <a href="https://www.linkedin.com/in/julie-brunet-pro" target="_blank"><i class="fa-brands fa-linkedin icon-design"></i></a>
         <a href="https://www.github.com/jlbrunet" target="_blank"><i class="fa-brands fa-github icon-design"></i></a>
       </div>
     </div>
     <div class="contact-container">
       <div class="contact-modal d-none" data-contact-target="contact_infos">
-        <a href="mailto: juliebrunet.pro@outlook.fr">juliebrunet.pro@outlook.fr</a>
-        <a href="tel: +33665353532">+33 6 65 35 35 32</a>
+        <a href="mailto: juliebrunet.pro@outlook.fr"><p>juliebrunet.pro@outlook.fr</p></a>
+        <a href="tel: +33665353532"><p>+33 6 65 35 35 32</p></a>
+        <button class="close-button" data-action="click->contact#close" data-contact-target="close_button"><i class="fa-solid fa-rectangle-xmark"></i></button>
       </div>
-      <button class="contact-button" data-action="click->contact#modal" data-contact-target="contact_button">Contact</button>
+      <div class="contact-button-container">
+        <button class="contact-button" data-action="click->contact#modal" data-contact-target="contact_button">Contact</button>
+      </div>
     </div>
   </div>
 

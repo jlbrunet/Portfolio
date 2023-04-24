@@ -1,0 +1,21 @@
+.profile-container {
+  width: 320px;
+  height: 100vh;
+  padding: 40px 20px;
+  position: fixed;
+  top: 0;
+  transition: transform 250ms;
+  //Responsive: reste jusqu'à une certaine taille de page où elle se transforme en boutton
+}
+
+.profile-container:hover {
+  transform: translateX(10px);
+  box-shadow: -1px 1px 10px 10px #e3e0ddf5;
+}
+
+.name {
+  padding: 40px 0;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}

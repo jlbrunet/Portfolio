@@ -1,38 +1,13 @@
 // Specific CSS for your home-page
 
+//Background-color
+
 body {
-  width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(to bottom right, #dbd8cf, #e3e0dd);
-  background-size: cover;
+  background: linear-gradient(to bottom right, $dark-background-color, $light-background-color);
   background-attachment: fixed;
 }
 
-// Profile banner
-
-.profile-banner {
-  width: 260px;
-  height: 100vh;
-  transition: transform 250ms;
-  // position: sticky;
-  // top: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.profile-banner:hover {
-  transform: translateX(10px);
-  box-shadow: -1px 1px 10px 10px #e3e0ddf5;
-}
-
-.name {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  font-size: 50px;
-  font-weight: bold;
-  color: $dark-gray;
-  text-align: center;
-}
+//Autres
 
 .homepage {
   width: calc(100% - 260px);
