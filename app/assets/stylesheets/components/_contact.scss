@@ -1,7 +1,4 @@
 .contact-button {
-  display: block;
-  margin: 0 auto;
-  margin-top: 90px;
   text-decoration: none;
   border: none;
   border-radius: 5px;
@@ -15,6 +12,14 @@
   transform: scale(1.05);
 }
 
+.contact-container {
+  display: block;
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 200px;
+  position: relative;
+}
+
 .contact-modal {
   display: block;
   margin: 0 auto;
@@ -24,4 +29,15 @@
   width: 210px;
   border-radius: 5px;
   padding: 5px;
+  position: absolute;
+  text-align: center;
+}
+
+.contact-modal a {
+  text-decoration: none;
+  color: #212426;
+}
+
+.contact-modal a:hover {
+  color: #212426cb;
 }
