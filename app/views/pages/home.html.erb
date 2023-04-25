@@ -29,39 +29,30 @@
     <div class="homepage-scrollable" data-controller="activation-scroll">
       <div class="home-container">
         <div class="navbar-container">
-          <a class="navbar-button accueil"
+          <button class="navbar-button accueil"
             data-activation-scroll-target="accueil"
+            data-reference=".description-container"
             data-action="click->activation-scroll#activation"
-            href="#description"
-            data-controller="scroll-to"
-            data-scroll-to-offset-value="150"
-            data-scroll-to-behavior-value="smooth"
-            >Accueil</a>
-          <a class="navbar-button portfolio"
+            >Accueil</button>
+          <button class="navbar-button portfolio"
             data-activation-scroll-target="portfolio"
+            data-reference=".portfolio-container"
             data-action="click->activation-scroll#activation"
-            href="#portfolio"
-            data-controller="scroll-to"
-            data-scroll-to-offset-value="150"
-            data-scroll-to-behavior-value="smooth"
-            >Portfolio</a>
-          <a class="navbar-button moi"
+            >Portfolio</button>
+          <button class="navbar-button moi"
             data-activation-scroll-target="moi"
+            data-reference=".whoiam"
             data-action="click->activation-scroll#activation"
-            href="#qui-suis-je"
-            data-controller="scroll-to"
-            data-scroll-to-offset-value="150"
-            data-scroll-to-behavior-value="smooth"
-            >Qui suis-je ?</a>
+            >Qui suis-je ?</button>
         </div>
       </div>
-      <div id="description" id="1">
+      <div class="description-container">
         <p>Bienvenue, moi c'est Julie, je suis développeuse web full-stack à Paris.</p>
       </div>
-      <div id="portofolio">
+      <div class="portfolio-container">
         <p>Voici mon portfolio.</p>
       </div>
-      <div id="qui-suis-je">
+      <div class="whoiam">
         <p>Voici qui je suis.</p>
       </div>
     </div>

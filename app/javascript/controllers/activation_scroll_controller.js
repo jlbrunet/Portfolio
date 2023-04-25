@@ -13,5 +13,16 @@ export default class extends Controller {
     this.portfolioTarget.classList.remove("active")
     this.moiTarget.classList.remove("active")
     event.currentTarget.classList.add("active")
+
+    let className = event.currentTarget.dataset.reference
+    let element = document.querySelector(className)
+    element.scrollIntoView({offset: 150, behavior: 'smooth'})
+
+    // let btn = document.querySelector('.btn');
+    // let el = document.querySelector('.special');
+
+    // btn.addEventListener('click', function () {
+    //     el.scrollIntoView(true);
+    // });
   }
 }

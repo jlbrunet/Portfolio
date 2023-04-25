@@ -46,21 +46,21 @@ body {
 
 //Caractéristiques du container de description
 
-#description {
+.description-container {
   border-radius: 10px;
   margin-top: 1000px;
   display: flex;
   justify-content: center;
 }
 
-#portoflio {
+.portfolio-container {
   border-radius: 10px;
   margin-top: 1000px;
   display: flex;
   justify-content: center;
 }
 
-#qui-suis-je {
+.whoiam {
   border-radius: 10px;
   margin-top: 1000px;
   display: flex;
