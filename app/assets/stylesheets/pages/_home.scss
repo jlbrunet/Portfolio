@@ -7,20 +7,20 @@ body {
   background-attachment: fixed;
 }
 
-//Autres
+//Display the profile banner and main page next to each other
+.page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .homepage {
-  width: calc(100% - 260px);
-  position: absolute;
-  top: 0px;
-  right: 0px;
+  width: 78%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.home-container {
-  display: flex;
-  justify-content: center;
-  // mettre une variable pour la taille de la banner comme les couleurs en $
-}
+//Autres
 
 .description-container {
   border-radius: 10px;
