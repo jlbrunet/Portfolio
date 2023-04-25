@@ -26,12 +26,12 @@
   <%# Main Page %>
 
   <div class="homepage-non-scrollable">
-    <div class="homepage-scrollable">
+    <div class="homepage-scrollable" data-controller="activation-scroll">
       <div class="home-container">
         <div class="navbar-container">
-          <button class="navbar-button">Accueil</button>
-          <button class="navbar-button">Portfolio</button>
-          <button class="navbar-button">Qui suis-je ?</button>
+          <button class="navbar-button" data-activation-scroll-target="accueil" data-action="click->activation-scroll#activation">Accueil</button>
+          <button class="navbar-button" data-activation-scroll-target="portfolio" data-action="click->activation-scroll#activation">Portfolio</button>
+          <button class="navbar-button" data-activation-scroll-target="moi" data-action="click->activation-scroll#activation">Qui suis-je ?</button>
         </div>
       </div>
       <div class="description-container">
