@@ -8,7 +8,10 @@ export default class extends Controller {
     this.accueilTarget.classList.add("active")
   }
 
-  activation() {
-    this.currentTarget.classList.add("active")
+  activation(event) {
+    this.accueilTarget.classList.remove("active")
+    this.portfolioTarget.classList.remove("active")
+    this.moiTarget.classList.remove("active")
+    event.currentTarget.classList.add("active")
   }
 }

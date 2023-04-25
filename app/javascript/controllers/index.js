@@ -12,3 +12,5 @@ application.register("contact", ContactController)
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+

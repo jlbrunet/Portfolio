@@ -29,18 +29,39 @@
     <div class="homepage-scrollable" data-controller="activation-scroll">
       <div class="home-container">
         <div class="navbar-container">
-          <button class="navbar-button" data-activation-scroll-target="accueil" data-action="click->activation-scroll#activation">Accueil</button>
-          <button class="navbar-button" data-activation-scroll-target="portfolio" data-action="click->activation-scroll#activation">Portfolio</button>
-          <button class="navbar-button" data-activation-scroll-target="moi" data-action="click->activation-scroll#activation">Qui suis-je ?</button>
+          <a class="navbar-button accueil"
+            data-activation-scroll-target="accueil"
+            data-action="click->activation-scroll#activation"
+            href="#description"
+            data-controller="scroll-to"
+            data-scroll-to-offset-value="150"
+            data-scroll-to-behavior-value="smooth"
+            >Accueil</a>
+          <a class="navbar-button portfolio"
+            data-activation-scroll-target="portfolio"
+            data-action="click->activation-scroll#activation"
+            href="#portfolio"
+            data-controller="scroll-to"
+            data-scroll-to-offset-value="150"
+            data-scroll-to-behavior-value="smooth"
+            >Portfolio</a>
+          <a class="navbar-button moi"
+            data-activation-scroll-target="moi"
+            data-action="click->activation-scroll#activation"
+            href="#qui-suis-je"
+            data-controller="scroll-to"
+            data-scroll-to-offset-value="150"
+            data-scroll-to-behavior-value="smooth"
+            >Qui suis-je ?</a>
         </div>
       </div>
-      <div class="description-container">
+      <div id="description" id="1">
         <p>Bienvenue, moi c'est Julie, je suis développeuse web full-stack à Paris.</p>
       </div>
-      <div class="portoflio-container">
+      <div id="portofolio">
         <p>Voici mon portfolio.</p>
       </div>
-      <div class="whoiam-container">
+      <div id="qui-suis-je">
         <p>Voici qui je suis.</p>
       </div>
     </div>
