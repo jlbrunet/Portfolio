@@ -19,7 +19,7 @@
   padding: 10px;
   width: 200px;
   font-weight: 600;
-  background-color: #fcc55e;
+  background-color: $yellow-2;
   transition: transform 200ms;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .close-button i {
-  color:#fcc55e;
+  color:$yellow-2;
 }
 
 .close-button:hover {
