@@ -1,9 +1,12 @@
-.icons {
+.icons-container {
+  padding: 40px 0;
+}
+
+.icons-box {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0 50px;
 }
 
 .icon-design {

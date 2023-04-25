@@ -1,0 +1,19 @@
+.profile-container {
+  width: 22%;
+  height: 100vh;
+  padding: 40px 20px;
+  box-shadow: -1px 1px 10px 10px #e3e0ddf5;
+  transition: transform 250ms;
+  overflow: hidden;
+}
+
+.profile-container:hover {
+  transform: translateX(10px);
+}
+
+.name {
+  padding: 40px 0;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
