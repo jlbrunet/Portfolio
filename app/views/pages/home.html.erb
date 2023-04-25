@@ -1,4 +1,4 @@
-<div class="page-container"> <%# contains : div profile-container + div content-container %>
+<div class="page-container">
 
   <div class="profile-container" data-controller="contact">
     <%= image_tag "profile_picture.jpg", alt: "profile picture", class: "avatar"%>
@@ -26,21 +26,38 @@
   <%# Main Page %>
 
   <div class="homepage-non-scrollable">
-    <div class="homepage-scrollable">
+    <div class="homepage-scrollable" data-controller="activation-scroll">
       <div class="home-container">
         <div class="navbar-container">
-          <button class="navbar-button">Accueil</button>
-          <button class="navbar-button">Portfolio</button>
-          <button class="navbar-button">Qui suis-je ?</button>
+          <button class="navbar-button accueil"
+            data-activation-scroll-target="accueil"
+            data-reference=".description-container"
+            data-action="click->activation-scroll#activation"
+            >Accueil</button>
+          <button class="navbar-button portfolio"
+            data-activation-scroll-target="portfolio"
+            data-reference=".portfolio-container"
+            data-action="click->activation-scroll#activation"
+            >Portfolio</button>
+          <button class="navbar-button moi"
+            data-activation-scroll-target="moi"
+            data-reference=".whoiam"
+            data-action="click->activation-scroll#activation"
+            >Qui suis-je ?</button>
         </div>
       </div>
       <div class="description-container">
         <p>Bienvenue, moi c'est Julie, je suis développeuse web full-stack à Paris.</p>
       </div>
+      <div class="portfolio-container">
+        <p>Voici mon portfolio.</p>
+      </div>
+      <div class="whoiam">
+        <p>Voici qui je suis.</p>
+      </div>
     </div>
   </div>
 
-  <%# Faire la partie tab active %>
   <%# Faire un bouton scroll --> en savoir plus %>
 
 </div>

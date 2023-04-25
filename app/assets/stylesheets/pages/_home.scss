@@ -28,7 +28,7 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ebb654;
+  background: $yellow-2-hover;
 }
 
 //Display the profile banner and main page next to each other
@@ -48,7 +48,21 @@ body {
 
 .description-container {
   border-radius: 10px;
-  margin-top: 1000px;
+  padding-top: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-container {
+  border-radius: 10px;
+  padding-top: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.whoiam {
+  border-radius: 10px;
+  padding-top: 400px;
   display: flex;
   justify-content: center;
 }

@@ -4,8 +4,13 @@
 
 import { application } from "./application"
 
+import ActivationScrollController from "./activation_scroll_controller"
+application.register("activation-scroll", ActivationScrollController)
+
 import ContactController from "./contact_controller"
 application.register("contact", ContactController)
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+

@@ -5,12 +5,12 @@
 }
 
 .navbar-container {
-  width: 600px;
+  width: 550px;
   height: 50px;
   margin-top: 40px;
   background-color: #f0edea;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   position: fixed;
@@ -19,7 +19,29 @@
 
 .navbar-button {
   border-radius: 10px;
+  margin: 0 30px;
+  padding: 5px 0px;
+  width: 200px;
   text-decoration: none;
+  color: $dark-gray;
+  text-align: center;
   border: none;
   background-color: #f0edea;
+  transition: transform 200ms;
+  cursor: pointer;
+}
+
+.active {
+  background-color: $yellow-2;
+  font-weight: 600;
+}
+
+.navbar-button:hover:not(.active) {
+  transform: scale(1.05);
+  background-color: #fcc55e36;
+  color: $dark-gray;
+}
+
+.navbar-button:hover {
+  color: $dark-gray;
 }
