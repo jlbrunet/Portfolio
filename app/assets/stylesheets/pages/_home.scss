@@ -41,7 +41,12 @@ body {
 .homepage-non-scrollable {
   width: 78%;
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.homepage-scrollable {
+  height: 100%;
+  overflow-y: scroll;
 }
 
 // Caractéristiques du container de description
