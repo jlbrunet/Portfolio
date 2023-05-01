@@ -1,4 +1,4 @@
-<div class="page-container">
+<div class="page-container" data-controller="activation-scroll">
 
   <div class="profile-container" data-controller="contact">
     <%= image_tag "profile_picture.jpg", alt: "profile picture", class: "avatar"%>
@@ -26,7 +26,7 @@
   <%# Main Page %>
 
   <div class="homepage-non-scrollable">
-    <div class="homepage-scrollable" data-controller="activation-scroll">
+    <div class="homepage-scrollable" data-action="scroll->activation-scroll#scrolling">
       <div class="home-container">
         <div class="navbar-container">
           <button class="navbar-button accueil"

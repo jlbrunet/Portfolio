@@ -18,4 +18,29 @@ export default class extends Controller {
     let element = document.querySelector(className)
     element.scrollIntoView({behavior: "smooth"})
   }
+
+  scrolling(event) {
+    let homepage = this.element.querySelector(".homepage-scrollable")
+    let positionHomepage = homepage.scrollTop
+
+    let portfolio = document.querySelector(".portfolio-container")
+    let positionPortfolio = portfolio.offsetTop
+
+    let whoiam = document.querySelector(".whoiam")
+    let positionWhoiam = whoiam.offsetTop
+
+    if (positionHomepage >= positionWhoiam) {
+      this.accueilTarget.classList.remove("active")
+      this.portfolioTarget.classList.remove("active")
+      this.moiTarget.classList.add("active")
+    } else if (positionHomepage >= positionPortfolio) {
+      this.accueilTarget.classList.remove("active")
+      this.portfolioTarget.classList.add("active")
+      this.moiTarget.classList.remove("active")
+    } else {
+      this.accueilTarget.classList.add("active")
+      this.portfolioTarget.classList.remove("active")
+      this.moiTarget.classList.remove("active")
+    }
+  }
 }
